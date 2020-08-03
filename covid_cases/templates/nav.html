@@ -1,0 +1,11 @@
+<nav>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="/">World</a>
+            {% for country in queryset %}
+            <a href="/lookup/{{country}}">{{country}}</a>
+            {% endfor %}
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load humanize %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="name">{{ obj.name }}</h1>
+    <div class="box">
+        <h1 class="item">confirmed: {{ confirmed | intcomma }}</h1>
+        <h1 class="item">active: {{ active | intcomma }}</h1>
+        <h1 class="item">deaths: {{ deaths | intcomma }}</h1>
+        <h1 class="item">recovered: {{ recovered | intcomma }}</h1>
+    </div>
+</div>
+{% endblock %}
