@@ -23,7 +23,7 @@ key = open('D:\Admin\Code\Projects\python\covid-cases\key.txt', 'r')
 content = key.read()
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "content"
+SECRET_KEY = content
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
